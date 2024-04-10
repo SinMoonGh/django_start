@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Blog
+{% endblock %}
+
+{% block content %}
+<h1>
+    어서오세요~ 안드로이드 성에 오신 걸 환영합니다!
+</h1>
+
+<div style="padding-top: 30px;">
+    {% for bookmark in bookmark_list %}
+    <h3><a href="">{{ bookmark.title }}</a></h3>
+    {% endfor %}
+</div>
+{% endblock %}

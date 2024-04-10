@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block style %}
+<style type="text/css">
+    .top-title {
+        padding-left: 500px;
+        padding-top: 20px;
+    }
+
+    .home-image {
+        background-image: url('{% static "img/lion.jpg" %}');
+        background-size: 100%;
+        background-position: center;
+        height: 500px;
+        background-repeat: no-repeat;
+        border-top: 10px solid #ccc;
+        border-bottom: 10px solid #ccc;
+        padding: 20px 0 0 20px;
+    }
+
+    .title {
+        color: #c80;
+        font-size: 50px;
+        font-weight: bold;
+    }
+
+    .power {
+        position: relative;
+        top: 77px;
+        color: #cc0;
+        font-style: italic;
+        margin-top: 250px;
+        font-size: 40px;
+    }
+</style>
+
+{% endblock %}
+
+{% block content %}
+<h1 class="top-title">사자의 집</h1>
+
+<div class="home-image">
+    <h1 class="title">손톱을 예쁘게 깎은 사자</h1>
+    <h4 class="power"><i class="fas fa-arrow-circle-right"></i> 착한 사자 예요</h4>
+</div>
+
+<hr style="margin-top: 50px;">
+
+<div class="row text-center">
+    <div class="col-sm-12">
+        <h3>어서와요~ 사자의 집에</h3>
+        <p>
+            (들어올 땐 마음대로지만 나갈 땐...)
+        </p>
+    </div>
+</div>
+{% endblock %}
